@@ -1,0 +1,31 @@
+footer {
+  display: flex;
+  justify-content: center;
+  height:63px;
+  background-color: #15141F;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  #containerMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:66%;
+
+    #homepage {
+      width: 24.74px;
+      height: 26.04px;
+    }
+
+    #search {
+      width: 35px;
+      height: 35px;
+    }
+
+    #profil {
+      width: 22.14px;
+      height: 25.62px;
+    }
+  }
+}
