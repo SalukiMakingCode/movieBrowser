@@ -43,7 +43,6 @@ const Movie = () => {
                     <MovieInfo
                         // image={result.backdrop_path}
                         image={result.poster_path}
-                        nbGenre={result.genres.length}
                         genres={result.genres}
                         title={result.title}
                         overview={result.overview}
