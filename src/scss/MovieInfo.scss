@@ -1,0 +1,123 @@
+#MovieInfo {
+  .banner {
+    background-size: 100%;
+    min-height: 287px;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .playMovie {
+      width:64px;
+      height:64px;
+      background: linear-gradient(141.08deg, rgba(255, 255, 255, 0.25) 13.56%, rgba(255, 255, 255, 0) 85.76%);
+      backdrop-filter: blur(4.81px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+    }
+  }
+  .title {
+    margin-top: 25px;
+    margin-left: 19px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+  }
+  .underTitle {
+    margin-left: 12px;
+    margin-top: 4px;
+    height:24px;
+    display:flex;
+    align-items: center;
+    font-size: 12px;
+    color: #BCBCBC;
+  }
+  .separator {
+    margin-top: 19px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+  }
+  .hr {
+    border: 0.1px solid #515151;
+    width:87.2%;
+  }
+  .part2 {
+    margin-left: 19px;
+    display: flex;
+    .containerRelease {
+      width: 150px;
+      .release {
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+      }
+      .releaseDate {
+        margin-top: 14px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.02em;
+        color: #BCBCBC;
+      }
+    }
+    .containerGenre {
+      .genre {
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+      }
+      .genreList {
+        display: flex;
+        flex-flow: row wrap;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.02em;
+        color: #BCBCBC;
+
+        .genreCard {
+          margin-top: 8px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-flow: row wrap;
+          width: 60px;
+          height: 25px;
+          border-radius: 15px;
+          background: rgba(250, 240, 202, 0.05);
+          backdrop-filter: blur(4.81px);
+          border: 1px solid #FFFFFF;
+          margin-right: 13px;
+        }
+      }
+    }
+  }
+
+  .synopsis {
+    margin-left: 19px;
+    margin-bottom: 14px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+  }
+  .overview {
+    margin-left: 19px;
+    margin-right: 19px;
+    margin-bottom: 21px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    color: #BCBCBC;
+  }
+}

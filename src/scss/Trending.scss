@@ -1,0 +1,12 @@
+.trendingDisplay {
+  display:inline-flex;
+  flex-flow: row nowrap;
+  overflow: auto;
+  max-width: 100%;
+  margin-bottom: 70px;
+  padding-bottom: 10px;
+  a {
+    text-decoration: none;
+    color:#FFFFFF;
+  }
+}

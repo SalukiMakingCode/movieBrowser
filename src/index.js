@@ -12,14 +12,19 @@ import Search from "./components/Search";
 import Movie from "./components/Movie";
 import Page404 from "./components/Page404";
 import Profil from "./components/Profil";
+import GenreList from "./components/GenreList";
+import SearchMovie from "./components/SearchMovie";
 
 const rootElement = document.getElementById("root");
 render (
     <BrowserRouter>
         <Routes>
             <Route path="/" element={<App />}> </Route>
-            <Route path="search" element={<Search />} />
-            <Route path="movie" element={<Movie />}>
+            <Route path="search" element={<Search />}>
+                <Route path=":genreId" element={<GenreList />} />
+            </Route>
+            <Route path="movie">
+                <Route path=":idMovie" element={<Movie />} />
                     {/*<Route*/}
                     {/*    index*/}
                     {/*    element={*/}
@@ -28,7 +33,7 @@ render (
                     {/*        </main>*/}
                     {/*    }*/}
                     {/*/>*/}
-                    {/*<Route path=":invoiceId" element={<Invoice />} />*/}
+
             </Route>
             <Route path="profil" element={<Profil />} />
             <Route path="*" element={<Page404 />} />

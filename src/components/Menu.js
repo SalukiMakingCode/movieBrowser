@@ -13,7 +13,7 @@ const Menu = () => {
         <footer>
             <div id="containerMenu">
                 <Link to={'/'}><img src={href.pathname==="/" ? homeActive : home} alt="homepage" id="homepage"/></Link>
-                <Link to={'/search'}><img src={href.pathname==="/search" ? searchActive : search} alt="search" id="search"/></Link>
+                <Link to={'/search/28'}><img src={href.pathname.substring(0, 7)==="/search" ? searchActive : search} alt="search" id="search"/></Link>
                 <Link to={'/profil'}><img src={href.pathname==="/profil" ? profilActive : profil} alt="profil" id="profil"/></Link>
             </div>
         </footer>

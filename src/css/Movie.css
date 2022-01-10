@@ -1,3 +1,23 @@
+.related {
+  margin-left: 19px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+}
 
+.relatedList {
+  margin-top: 16px;
+  margin-left: 19px;
+  display: inline-flex;
+  flex-flow: row nowrap;
+  overflow: auto;
+  max-width: 100%;
+}
+.relatedList a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
 
 /*# sourceMappingURL=Movie.css.map */

@@ -1,0 +1,15 @@
+.GenreListCard {
+  margin-left: 25px;
+  margin-bottom: 16px;
+  display: flex;
+  flex-flow: column wrap;
+  width:154px;
+  color:#FFFFFF;
+  .imgCard {
+    width:154px;
+    border-radius: 20px;
+  }
+  .year {
+    color:#BCBCBC;
+  }
+}

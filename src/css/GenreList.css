@@ -1,0 +1,10 @@
+.genreListDisplay {
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 100%;
+}
+.genreListDisplay a {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=GenreList.css.map */

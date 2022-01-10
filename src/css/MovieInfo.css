@@ -1,0 +1,119 @@
+#MovieInfo .banner {
+  background-size: 100%;
+  min-height: 287px;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#MovieInfo .banner .playMovie {
+  width: 64px;
+  height: 64px;
+  background: linear-gradient(141.08deg, rgba(255, 255, 255, 0.25) 13.56%, rgba(255, 255, 255, 0) 85.76%);
+  backdrop-filter: blur(4.81px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+#MovieInfo .title {
+  margin-top: 25px;
+  margin-left: 19px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+}
+#MovieInfo .underTitle {
+  margin-left: 12px;
+  margin-top: 4px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  color: #BCBCBC;
+}
+#MovieInfo .separator {
+  margin-top: 19px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+}
+#MovieInfo .hr {
+  border: 0.1px solid #515151;
+  width: 87.2%;
+}
+#MovieInfo .part2 {
+  margin-left: 19px;
+  display: flex;
+}
+#MovieInfo .part2 .containerRelease {
+  width: 150px;
+}
+#MovieInfo .part2 .containerRelease .release {
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+}
+#MovieInfo .part2 .containerRelease .releaseDate {
+  margin-top: 14px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.02em;
+  color: #BCBCBC;
+}
+#MovieInfo .part2 .containerGenre .genre {
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+}
+#MovieInfo .part2 .containerGenre .genreList {
+  display: flex;
+  flex-flow: row wrap;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.02em;
+  color: #BCBCBC;
+}
+#MovieInfo .part2 .containerGenre .genreList .genreCard {
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 60px;
+  height: 25px;
+  border-radius: 15px;
+  background: rgba(250, 240, 202, 0.05);
+  backdrop-filter: blur(4.81px);
+  border: 1px solid #FFFFFF;
+  margin-right: 13px;
+}
+#MovieInfo .synopsis {
+  margin-left: 19px;
+  margin-bottom: 14px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+}
+#MovieInfo .overview {
+  margin-left: 19px;
+  margin-right: 19px;
+  margin-bottom: 21px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  color: #BCBCBC;
+}
+
+/*# sourceMappingURL=MovieInfo.css.map */
