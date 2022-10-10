@@ -1,11 +1,11 @@
 export default function useDateFormatter() {
 
-  const getYear = (date = "1800") => {
+  const getYear = (date = "????") => {
 
     return date.substring(0, 4);
   }
 
-  const toDate = (date ="1800") => {
+  const toDate = (date ="????") => {
     let year = date.substring(0, 4);
     let month = date.substring(5, 7);
     let day = date.substring(8, 10);
