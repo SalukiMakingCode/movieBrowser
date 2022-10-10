@@ -16,7 +16,7 @@ import GenreList from "./components/GenreList";
 
 const rootElement = document.getElementById("root");
 render (
-    <BrowserRouter>
+    <BrowserRouter >
         <Routes>
             <Route path="/" element={<App />}> </Route>
             <Route path="search" element={<Search />}>
