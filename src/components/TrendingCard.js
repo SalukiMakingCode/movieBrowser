@@ -8,7 +8,7 @@ const TrendingCard = (props) => {
     return (
         <div className="trendingCard" style={divStyle}>
             <div className="imdb">
-            iMDb
+            iMDb<br/>
             <img src={star} alt="star"/>
             {props.vote}
             </div>

@@ -2,9 +2,19 @@
   display: flex;
   flex-flow: row wrap;
   max-width: 100%;
+  padding-bottom: 4rem;
 }
 .genreListDisplay a {
   text-decoration: none;
+}
+.genreListDisplay a img {
+  border: 1px solid black;
+}
+.genreListDisplay a:hover .hoverTitle, .genreListDisplay a:hover .year {
+  color: #EB3D25;
+}
+.genreListDisplay a:hover img {
+  border: 1px solid #EB3D25;
 }
 
 /*# sourceMappingURL=GenreList.css.map */

@@ -9,16 +9,24 @@ const Trending = () => {
     const [error, setError] = useState('');
 
 useEffect( () => {
+    let componentMounted = true;
     fetch('https://api.themoviedb.org/3/trending/movie/day?api_key=b177f17184ae41c95021d0c7544927cf')
         .then(response => response.json())
         .then(jsonMovie => {
-            setResult(jsonMovie.results);
-            setLoad(true);
+            if(componentMounted) {
+                setResult(jsonMovie.results);
+                setLoad(true);
+            }
         })
         .catch(err => {
-            setError(err.message);
-            setLoad(true)
+            if(componentMounted) {
+                setError(err.message);
+                setLoad(true)
+            }
         })
+    return () => {
+        componentMounted = false;
+    }
 }, []);
 
     if (load) return (

@@ -2,15 +2,19 @@ import "../css/App.css";
 import Menu from "./Menu";
 import MovieSpotlight from "./MovieSpotlight";
 import Trending from "./Trending";
+import NavBar from "./NavBar";
+import NowPlaying from "./NowPlaying";
 
 function App() {
   return (
     <div>
-        <h1><span>Movie</span>Browser</h1>
+        <NavBar />
         <MovieSpotlight />
         <Menu />
         <h2>Trending</h2>
         <Trending />
+        <h2>Now on Theater</h2>
+        <NowPlaying />
     </div>
   );
 }

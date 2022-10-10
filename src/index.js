@@ -13,7 +13,6 @@ import Movie from "./components/Movie";
 import Page404 from "./components/Page404";
 import Profil from "./components/Profil";
 import GenreList from "./components/GenreList";
-import SearchMovie from "./components/SearchMovie";
 
 const rootElement = document.getElementById("root");
 render (
@@ -25,15 +24,6 @@ render (
             </Route>
             <Route path="movie">
                 <Route path=":idMovie" element={<Movie />} />
-                    {/*<Route*/}
-                    {/*    index*/}
-                    {/*    element={*/}
-                    {/*        <main style={{ padding: "1rem" }}>*/}
-                    {/*            <p>Select an invoice</p>*/}
-                    {/*        </main>*/}
-                    {/*    }*/}
-                    {/*/>*/}
-
             </Route>
             <Route path="profil" element={<Profil />} />
             <Route path="*" element={<Page404 />} />

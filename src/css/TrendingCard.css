@@ -7,15 +7,20 @@
   border-radius: 30px;
   margin-left: 24px;
   margin-right: 24px;
+  border: solid 1px black;
+}
+.trendingCard:hover {
+  border: solid 1px #EB3D25;
 }
 .trendingCard .imdb {
   background-color: rgba(218, 218, 218, 0.3);
   backdrop-filter: blur(5px);
   border-radius: 15px;
   width: 77px;
-  height: 49.15px;
+  height: 45px;
   margin-left: 166px;
   transform: translate(0, 21px);
+  text-align: center;
 }
 .trendingCard .trendingCardTitle {
   background-color: rgba(218, 218, 218, 0.3);

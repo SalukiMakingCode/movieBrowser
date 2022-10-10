@@ -7,6 +7,10 @@
   line-height: 14px;
   letter-spacing: 0.02em;
   color: #FFFFFF;
+  border: 1px solid black;
+}
+.relatedCard:hover {
+  border: 1px solid #EB3D25;
 }
 .relatedCard .relatedImage {
   width: 142px;

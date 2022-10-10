@@ -1,10 +1,11 @@
 import '../css/Profil.css';
 import Menu from "./Menu";
+import NavBar from "./NavBar";
 
 const Profil = () => {
     return (
         <div>
-            <h1><span>Movie</span>Browser</h1>
+            <NavBar />
             <Menu />
         </div>
     );

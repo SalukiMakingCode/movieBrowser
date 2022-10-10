@@ -1,9 +1,7 @@
 import '../css/MovieInfo.css';
-import playMovie from '../assets/img/playMovie.png';
 import runtime from '../assets/img/runtime.png';
 import star from '../assets/img/movieStar.png';
 import useDateFormatter from '../hooks/useDateFormatter'
-// video={result.video}
 
 const MovieInfo = (props) => {
     const {toDate} = useDateFormatter();
@@ -15,22 +13,10 @@ const MovieInfo = (props) => {
             {elem.name === "Science Fiction" ? "Sci-Fi" :
                 elem.name === "Documentary" ? "Docu" : elem.name}
         </div>
-    )
+     )
     return (
         <div id="MovieInfo">
             <div style={divStyle} className="banner">
-                <div className="playMovie">
-                    <img src={playMovie} alt="play"/>
-                </div>
-
-                {/*<iframe width="560" height="315" src="https://www.youtube.com/embed/-0bYWnP3jH4?controls=0"*/}
-                {/*        title="YouTube video player" frameBorder="0"*/}
-                {/*        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"*/}
-                {/*        allowFullScreen> </iframe>*/}
-
-                {/*<iframe id="ytplayer" type="text/html" width="720" height="405"*/}
-                {/*        src="https://www.youtube.com/embed/-0bYWnP3jH4?autoplay=1&cc_load_policy=1&fs=0&loop=1&modestbranding=1&iv_load_policy=3"*/}
-                {/*        frameBorder="0" allowFullScreen> </iframe>*/}
             </div>
             <div className="title">
                 {props.title}

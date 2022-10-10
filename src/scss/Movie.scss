@@ -9,12 +9,39 @@
 .relatedList {
   margin-top: 16px;
   margin-left: 19px;
+  margin-bottom:65px;
+  padding-bottom: 30px;
   display:inline-flex;
   flex-flow: row nowrap;
   overflow: auto;
-  max-width: 100%;
+  max-width: 97%;
+  /* width */
+  &::-webkit-scrollbar {
+    width: 10px;
+    height: 6px;
+  }
+  /* Track */
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: #b3000056;
+    border-radius: 10px;
+  }
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: #b30000;
+  }
   a {
     text-decoration: none;
     color: #FFFFFF;
   }
 }
+
+//stephane.faulkner@unamur.be   + ingrid
+//
+// matiere
+// revision avec formateurs
+// journee de renforcement

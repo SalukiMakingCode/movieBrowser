@@ -2,8 +2,9 @@ import '../css/Search.css';
 import Menu from "./Menu";
 import searchForm from '../assets/img/searchForm.png'
 import {useEffect, useState} from "react";
-import {NavLink, Outlet, useSearchParams} from "react-router-dom";
+import {Link, NavLink, Outlet, useSearchParams} from "react-router-dom";
 import SearchMovie from "./SearchMovie";
+import NavBar from "./NavBar";
 
 const Search = () => {
     const [result, setResult] = useState([]);
@@ -12,23 +13,31 @@ const Search = () => {
     let [searchParams, setSearchParams] = useSearchParams("");
 
     useEffect( () => {
+        let componentMounted = true;
         fetch('https://api.themoviedb.org/3/genre/movie/list?api_key=b177f17184ae41c95021d0c7544927cf')
             .then(response => response.json())
             .then(jsonMovie => {
-                setResult(jsonMovie.genres);
-                setLoad(true);
+                if(componentMounted) {
+                    setResult(jsonMovie.genres);
+                    setLoad(true);
+                }
             })
             .catch(err => {
-                setError(err.message);
-                setLoad(true)
+                if(componentMounted) {
+                    setError(err.message);
+                    setLoad(true)
+                }
             })
+        return () => {
+            componentMounted = false;
+        }
     }, []);
 
 
     if (load && searchParams=="")
     return (
         <div className="Search">
-            <h1><span>Movie</span>Browser</h1>
+            <NavBar />
 
             <div className="searchForm">
                 <img src={searchForm} alt="search a movie" />
@@ -69,7 +78,7 @@ const Search = () => {
     else if (searchParams!="") {
         return (
             <div className="Search">
-                <h1><span>Movie</span>Browser</h1>
+                <NavBar />
 
                 <div className="searchForm">
                     <img src={searchForm} alt="search a movie" />
@@ -94,7 +103,7 @@ const Search = () => {
 
     else return (
         <div className="Search">
-            <h1><span>Movie</span>Browser</h1>
+            <NavBar />
             Loading ....
         </div>
     );

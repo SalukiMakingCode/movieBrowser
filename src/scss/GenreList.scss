@@ -2,7 +2,19 @@
   display: flex;
   flex-flow: row wrap;
   max-width: 100%;
+  padding-bottom: 4rem;
   a {
     text-decoration: none;
+    img{
+      border:1px solid black;
+    }
+    &:hover {
+      .hoverTitle, .year{
+        color:#EB3D25;
+      }
+      img {
+        border: 1px solid #EB3D25;
+      }
+    }
   }
 }
